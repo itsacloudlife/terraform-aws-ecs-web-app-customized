@@ -150,7 +150,7 @@ output "cloudwatch_log_group_name" {
   description = "Cloudwatch log group name"
   value       = join("", aws_cloudwatch_log_group.app.*.name)
 }
-
+/*
 output "codebuild" {
   description = "All outputs from `module.ecs_codepipeline`"
   value       = module.ecs_codepipeline
@@ -212,7 +212,7 @@ output "codepipeline_webhook_url" {
   value       = module.ecs_codepipeline.webhook_url
   sensitive   = true
 }
-
+*/
 output "ecs_cloudwatch_autoscaling" {
   description = "All outputs from `module.ecs_cloudwatch_autoscaling`"
   value       = module.ecs_cloudwatch_autoscaling
