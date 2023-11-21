@@ -293,7 +293,7 @@ module "ecs_cloudwatch_sns_alarms" {
       [local.cpu_utilization_low_alarm_actions],
     )
   )
-
+ 
   cpu_utilization_low_ok_actions = var.ecs_alarms_cpu_utilization_low_ok_actions
 
   memory_utilization_high_threshold          = var.ecs_alarms_memory_utilization_high_threshold
