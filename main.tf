@@ -185,7 +185,7 @@ module "ecs_alb_service_task" {
 
   context = module.this.context
 }
-/*
+
 module "ecs_codepipeline" {
   enabled = var.codepipeline_enabled
   source  = "cloudposse/ecs-codepipeline/aws"
@@ -236,7 +236,7 @@ module "ecs_codepipeline" {
 
   context = module.this.context
 }
-*/
+
 module "ecs_cloudwatch_autoscaling" {
   enabled               = var.autoscaling_enabled
   source                = "cloudposse/ecs-cloudwatch-autoscaling/aws"
